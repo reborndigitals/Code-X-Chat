@@ -11,11 +11,11 @@ import asyncio
 import time
 from datetime import datetime
 from pyrogram import enums
-API_ID = int(getenv("API_ID", "10284859"))
-API_HASH = getenv("API_HASH", "b0ad58eb8b845ba0003e0d9ce5fc2196")
-BOT_TOKEN = getenv("BOT_TOKEN", "") 
-MONGO_URL = getenv("MONGO_DB_URI", "mongodb+srv://heartbeat:Beat7Heart@heartbeat.1h1nbxv.mongodb.net/?retryWrites=true&w=majority")
-BOT_USERNAME = getenv("BOT_USERNAME" , "thedakkidaikathaval_bot")
+API_ID = int(os.environ.get("API_ID", "10284859"))
+API_HASH = os.environ.get("API_HASH", "b0ad58eb8b845ba0003e0d9ce5fc2196")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+MONGO_URL = os.environ.get("MONGO_DB_URI", "mongodb+srv://heartbeat:Beat7Heart@heartbeat.1h1nbxv.mongodb.net/?retryWrites=true&w=majority")
+BOT_USERNAME = os.environ.get("BOT_USERNAME" , "thedakkidaikathaval_bot")
 UPDATE_CHNL = os.environ.get("UPDATE_CHNL","HeartBeat_Offi")
 OWNER_USERNAME = os.environ.get("OWNER_USERNAME","rajeshrakis")
 SUPPORT_GRP = os.environ.get("SUPPORT_GRP","HeartBeat_Muzic")
