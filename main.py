@@ -13,7 +13,7 @@ from datetime import datetime
 from pyrogram import enums
 API_ID = int(getenv("API_ID", "10284859"))
 API_HASH = getenv("API_HASH", "b0ad58eb8b845ba0003e0d9ce5fc2196")
-BOT_TOKEN = getenv("BOT_TOKEN", "2096983652:AAGN-6pCSQCSHaMdoVhk60E6_-ne6nRBf14") 
+BOT_TOKEN = getenv("BOT_TOKEN", "") 
 MONGO_URL = getenv("MONGO_DB_URI", "mongodb+srv://heartbeat:Beat7Heart@heartbeat.1h1nbxv.mongodb.net/?retryWrites=true&w=majority")
 BOT_USERNAME = getenv("BOT_USERNAME" , "thedakkidaikathaval_bot")
 UPDATE_CHNL = os.environ.get("UPDATE_CHNL","HeartBeat_Offi")
