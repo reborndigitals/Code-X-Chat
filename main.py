@@ -13,9 +13,9 @@ from datetime import datetime
 from pyrogram import enums
 API_ID = int(os.environ.get("API_ID", "10284859"))
 API_HASH = os.environ.get("API_HASH", "b0ad58eb8b845ba0003e0d9ce5fc2196")
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "7794914126:AAFlL00yeX8W6gS43ikkXas7uZpRX4qYbeA") 
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "2096983652:AAHz41orhz9RrWscwg_WwSCp0_OhP-zLmDY") 
 MONGO_URL = os.environ.get("MONGO_DB_URI", "mongodb+srv://heartbeat:Beat7Heart@heartbeat.1h1nbxv.mongodb.net/?retryWrites=true&w=majority")
-BOT_USERNAME = os.environ.get("BOT_USERNAME" , "VIPtheKING_Bot")
+BOT_USERNAME = os.environ.get("BOT_USERNAME" , "Thedakkidaikathaval_bot")
 UPDATE_CHNL = os.environ.get("UPDATE_CHNL","HeartBeat_Offi")
 OWNER_USERNAME = os.environ.get("OWNER_USERNAME","rajeshrakis")
 SUPPORT_GRP = os.environ.get("SUPPORT_GRP","HeartBeat_Muzic")
@@ -186,7 +186,7 @@ async def ping(client, message: Message):
         ms = (end-start).microseconds / 1000
         await message.reply_photo(
                              photo=START_IMG,
-                             caption=f"ʜᴇʏ ʙᴀʙʏ!!\n**[{BOT_NAME}](t.me/{BOT_USERNAME})** ɪꜱ ᴀʟɪᴠᴇ 🥀 ᴀɴᴅ ᴡᴏʀᴋɪɴɢ ꜰɪɴᴇ ᴡɪᴛʜ ᴘᴏɴɢ ᴏꜰ \n➥ `{ms}` ms\n\n**ᴍᴀᴅᴇ ᴡɪᴛʜ ❣️ ʙʏ || [sʜɪᴠᴀɴsʜ](https://t.me/SHIVANSHDEVS)||**",
+                             caption=f"ʜᴇʏ ʙᴀʙʏ!!\n**[{BOT_NAME}](t.me/{BOT_USERNAME})** ɪꜱ ᴀʟɪᴠᴇ 🥀 ᴀɴᴅ ᴡᴏʀᴋɪɴɢ ꜰɪɴᴇ ᴡɪᴛʜ ᴘᴏɴɢ ᴏꜰ \n➥ `{ms}` ms\n\n**ᴍᴀᴅᴇ ᴡɪᴛʜ ❣️ ʙʏ || [HeartBeat](https://t.me/HeartBeat_Muzic)||**",
                              reply_markup=InlineKeyboardMarkup(PNG_BTN),
        )
 
