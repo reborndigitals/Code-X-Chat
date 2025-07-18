@@ -13,13 +13,13 @@ from datetime import datetime
 from pyrogram import enums
 API_ID = int(os.environ.get("API_ID", "10284859"))
 API_HASH = os.environ.get("API_HASH", "b0ad58eb8b845ba0003e0d9ce5fc2196")
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "2096983652:AAHz41orhz9RrWscwg_WwSCp0_OhP-zLmDY") 
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "7894318281:AAEnYkzuwnQL9tdu1TE1mYjzYGAQe7bY35U") 
 MONGO_URL = os.environ.get("MONGO_DB_URI", "mongodb+srv://heartbeat:Beat7Heart@heartbeat.1h1nbxv.mongodb.net/?retryWrites=true&w=majority")
-BOT_USERNAME = os.environ.get("BOT_USERNAME" , "Thedakkidaikathaval_bot")
+BOT_USERNAME = os.environ.get("BOT_USERNAME" , "codex_X_xbot")
 UPDATE_CHNL = os.environ.get("UPDATE_CHNL","HeartBeat_Offi")
 OWNER_USERNAME = os.environ.get("OWNER_USERNAME","rajeshrakis")
-SUPPORT_GRP = os.environ.get("SUPPORT_GRP","HeartBeat_Muzic")
-BOT_NAME = os.environ.get("BOT_NAME","𝞖𝘌𝘈𝘙𝘛𝞑𝘌𝘈𝘛𝂬♡𝂬𝘿𝘙𝘜𝘎𝘡")
+SUPPORT_GRP = os.environ.get("SUPPORT_GRP","HeartBeat_Fam")
+BOT_NAME = os.environ.get("BOT_NAME","𝘾𝞗𝘿𝙀 𝍡 𝕏 シ︎")
 START_IMG = os.environ.get("START_IMG","https://graph.org/file/ffdb1be822436121cf5fd.png")
 
 STKR = os.environ.get("STKR","")
@@ -46,7 +46,7 @@ SOURCE_TEXT = f"""
 ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ᴛʜᴇ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ**
 """
 SOURCE_BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('sᴏᴜʀᴄᴇ', callback_data='hurr')], [InlineKeyboardButton(" ꜱᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/{SUPPORT_GRP}"), InlineKeyboardButton(text="ʙᴀᴄᴋ ", callback_data="HELP_BACK")]])
-SOURCE = 'https://t.me/HeartBeat_Muzic'
+SOURCE = 'https://t.me/HeartBeat_Fam'
 x=["❤️","🎉","✨","🪸","🎉","🎈","🎯"]
 g=choice(x)
 async def is_admins(chat_id: int):
