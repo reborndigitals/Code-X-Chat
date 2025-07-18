@@ -126,7 +126,7 @@ async def must_join_channel(bot: Client, msg: Message):
                 pass
     except ChatAdminRequired:
         print(f"Promote me as an admin in the UPDATE CHANNEL  : {UPDATE_CHNL} !")
-@Mukesh.on_message(filters.command(["xstart",f"xstart@{BOT_USERNAME}"]))
+@Mukesh.on_message(filters.command(["start",f"start@{BOT_USERNAME}"]))
 async def restart(client, m: Message):
         accha = await m.reply_text(
                         text = f"{g}")
@@ -163,17 +163,17 @@ async def cb_handler(Client, query: CallbackQuery):
     elif query.data == 'hurr':
         await query.answer()
         await query.message.edit_text(SOURCE)
-@Mukesh.on_message(filters.command(["xhelp", f"xhelp@{BOT_USERNAME}"], prefixes=["","+", ".", "/", "-", "?", "$"]))
+@Mukesh.on_message(filters.command(["help", f"help@{BOT_USERNAME}"], prefixes=["","+", ".", "/", "-", "?", "$"]))
 async def restart(client, message):
     hmm = await message.reply_photo(START_IMG,
                              caption= HELP_READ,
                         reply_markup= InlineKeyboardMarkup(HELP_BACK),
        )
-@Mukesh.on_message(filters.command(['xsource', 'xrepo']))
+@Mukesh.on_message(filters.command(['source', 'repo']))
 async def source(bot, m):
     await m.reply_photo(START_IMG, caption=SOURCE_TEXT, reply_markup=SOURCE_BUTTONS, reply_to_message_id=m.id)
 #  alive
-@Mukesh.on_message(filters.command(["xping","xalive"], prefixes=["","+", "/", "-", "?", "$", "&","."]))
+@Mukesh.on_message(filters.command(["ping","alive"], prefixes=["","+", "/", "-", "?", "$", "&","."]))
 async def ping(client, message: Message):
         start = datetime.now()
         t = "__ριиgιиg...__"
@@ -186,7 +186,7 @@ async def ping(client, message: Message):
         ms = (end-start).microseconds / 1000
         await message.reply_photo(
                              photo=START_IMG,
-                             caption=f"ʜᴇʏ ʙᴀʙʏ!!\n**[{BOT_NAME}](t.me/{BOT_USERNAME})** ɪꜱ ᴀʟɪᴠᴇ 🥀 ᴀɴᴅ ᴡᴏʀᴋɪɴɢ ꜰɪɴᴇ ᴡɪᴛʜ ᴘᴏɴɢ ᴏꜰ \n➥ `{ms}` ms\n\n**ᴍᴀᴅᴇ ᴡɪᴛʜ ❣️ ʙʏ || [HeartBeat](https://t.me/HeartBeat_Muzic)||**",
+                             caption=f"ʜᴇʏ ʙᴀʙʏ!!\n**[{BOT_NAME}](t.me/{BOT_USERNAME})** ɪꜱ ᴀʟɪᴠᴇ 🥀 ᴀɴᴅ ᴡᴏʀᴋɪɴɢ ꜰɪɴᴇ ᴡɪᴛʜ ᴘᴏɴɢ ᴏꜰ \n➥ `{ms}` ms\n\n**ᴍᴀᴅᴇ ᴡɪᴛʜ ❣️ ʙʏ || [HeartBeat](https://t.me/HeartBeat_Fam)||**",
                              reply_markup=InlineKeyboardMarkup(PNG_BTN),
        )
 
@@ -461,5 +461,5 @@ async def vickprivatesticker(client: Client, message: Message):
            if not Yo == "text":
                await message.reply_sticker(f"{hey}")
 
-print(f"{BOT_NAME} ɪs ᴀʟɪᴠᴇ! ʙᴏᴛ ʙʏ sʜɪᴠᴀɴsʜ")      
+print(f"{BOT_NAME} ɪs ᴀʟɪᴠᴇ! ʙᴏᴛ ʙʏ ʜʙ-ғᴀᴍ")      
 Mukesh.run()
