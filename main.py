@@ -20,7 +20,7 @@ UPDATE_CHNL = os.environ.get("UPDATE_CHNL","HeartBeat_Offi")
 OWNER_USERNAME = os.environ.get("OWNER_USERNAME","rajeshrakis")
 SUPPORT_GRP = os.environ.get("SUPPORT_GRP","HeartBeat_Fam")
 BOT_NAME = os.environ.get("BOT_NAME","𝘾𝞗𝘿𝙀 𝍡 𝕏 シ︎")
-START_IMG = os.environ.get("START_IMG","https://graph.org/file/ffdb1be822436121cf5fd.png")
+START_IMG = os.environ.get("START_IMG","https://files.catbox.moe/03avh4.jpg")
 
 STKR = os.environ.get("STKR","")
 
